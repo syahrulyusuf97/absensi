@@ -20,13 +20,6 @@ use Carbon\Carbon;
 class SignController extends Controller
 {
 
-    private $agent;
-
-    public function __construct()
-    {
-        $this->agent = new Agent();
-    }
-
     public function login(Request $request) {
 		if (Auth::check()) {
             if (Auth::user()->level == 1) {
