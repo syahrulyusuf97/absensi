@@ -1,0 +1,242 @@
+.preview {
+  margin-right: 10px;
+  text-align: center;
+}
+.thumbnail {
+  min-height: 220px;
+  line-height: 220px;
+  font-size: 28px;
+}
+.preview .thumbnail > img {
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 5px;
+  vertical-align: middle;
+  text-align: center;
+  max-height: 190px;
+  padding: 10px 0px 0px 10px;
+}
+
+.reset{
+  background: linear-gradient(white, #EAEAEA);
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased;
+  height: 25px;
+  width: 100px;
+  line-height: 25px;
+  border-radius: 5px;
+}
+
+.reset:hover{
+  background: linear-gradient(white, #EAEAEA);
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.image-table{
+  width: 10px;
+  height: 10px;
+}
+
+@media screen and (min-width: 601px) {
+  div.preview {
+    font-size: 30px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.preview {
+    font-size: 15px;
+  }
+}
+
+.inner > h3 {
+  font-size: 25px;
+}
+
+.icon > i {
+  max-width: 50%;
+  max-height: 50%;
+  margin-top: 10px;
+}
+
+.slimScrollBar {
+  background: none repeat scroll 0 0 #0067a4 !important;
+  border-radius: 0;
+  display: none;
+  height: 702.936px;
+  position: absolute;
+  right: 1px;
+  top: 145px;
+  width: 10px !important;
+  z-index: 99;
+  opacity: 0.7!important;
+}
+
+/* Absolute Center Spinner */
+.loading {
+  position: fixed;
+  z-index: 99999;
+  height: 2em;
+  width: 2em;
+  overflow: visible;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+
+/* Transparent Overlay */
+.loading:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+/* :not(:required) hides these rules from IE9 and below */
+.loading:not(:required) {
+  /* hide "loading..." text */
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.loading:not(:required):after {
+  content: '';
+  display: block;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  -webkit-animation: spinner 1500ms infinite linear;
+  -moz-animation: spinner 1500ms infinite linear;
+  -ms-animation: spinner 1500ms infinite linear;
+  -o-animation: spinner 1500ms infinite linear;
+  animation: spinner 1500ms infinite linear;
+  border-radius: 0.5em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+  box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+}
+
+/* Animation */
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.saldo {
+  border: 3px solid;
+  color: white;
+  border-radius: 30%;
+  padding: 5px;
+}
+
+/*.legend {
+    display: block;
+    -webkit-padding-start: 2px;
+    -webkit-padding-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+}
+
+.legendLayer .background {
+    fill: rgba(255, 255, 255, 0.85);
+    stroke: rgba(0, 0, 0, 0.85);
+    stroke-width: 1;
+}*/
+
+.legendColorBox div{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}
+
+.legendLabel{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:22px;padding-left:2px;font-size:10px}
+
+.lbl-ktg {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.box-chart-responsive {
+  min-width: 100% !important;
+}
