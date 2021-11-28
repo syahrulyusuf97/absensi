@@ -48,13 +48,13 @@ Route::group(['prefix' => 'v1'], function(){
                 Route::get('/izin/get-data', 'IzinController@getIzin');
 
                 //Profile
-                Route::post('/profil/update-nip', 'DashboardController@updateNIP');
-                Route::post('/profil/update-nama', 'DashboardController@updateNama');
-                Route::post('/profil/update-email', 'DashboardController@updateEmail');
-                Route::post('/profil/update-username', 'DashboardController@updateUsername');
-                Route::post('/profil/update-password', 'DashboardController@updatePassword');
-                Route::post('/profil/update-ttl', 'DashboardController@updateTtl');
-                Route::post('/profil/update-alamat', 'DashboardController@updateAlamat');
+                Route::put('/profil/update-nip', 'DashboardController@updateNIP');
+                Route::put('/profil/update-nama', 'DashboardController@updateNama');
+                Route::put('/profil/update-email', 'DashboardController@updateEmail');
+                Route::put('/profil/update-username', 'DashboardController@updateUsername');
+                Route::put('/profil/update-password', 'DashboardController@updatePassword');
+                Route::put('/profil/update-ttl', 'DashboardController@updateTtl');
+                Route::put('/profil/update-alamat', 'DashboardController@updateAlamat');
             });
         });
     });
