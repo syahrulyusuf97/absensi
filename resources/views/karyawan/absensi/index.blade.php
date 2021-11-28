@@ -126,7 +126,7 @@
 
 	function showError(error) {
 		// alert(`Error : ${error.message}`)
-		alert(`Koneksi terputus!`)
+		alert(`Koneksi internet terputus!`)
 	}
 
 	function showPosition(position) {
