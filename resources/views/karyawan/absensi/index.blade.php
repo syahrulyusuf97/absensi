@@ -116,11 +116,17 @@
 	}
 
 	function getLocation() {
+		
 		if (navigator.geolocation) {
-			navigator.geolocation.getCurrentPosition(showPosition);
+			navigator.geolocation.getCurrentPosition(showPosition, showError);
 		} else { 
-			return;
+			alert('Location Not allowed');
 		}
+	}
+
+	function showError(error) {
+		// alert(`Error : ${error.message}`)
+		alert(`Koneksi terputus!`)
 	}
 
 	function showPosition(position) {
@@ -130,7 +136,6 @@
 			longitude : position.coords.longitude
 		};
 
-		$('#btn_absen').prop('disabled', true);
     	showLoading();
 
     	axios.post("{{url('/absen')}}", data)
